@@ -1,0 +1,51 @@
+version: '3'
+
+services:
+    api-server:
+        build: ./api-server
+        environment:
+            - ASPNETCORE_ENVIRONMENT=Production
+        ports:
+            - "60600:80"
+        volumes:
+            - "/etc/localtime:/etc/localtime"
+            - "./api-server:/app"
+        restart: always
+        logging: 
+            driver: "json-file"
+            options: 
+              max-size: "300m" 
+    auth-server:
+        build: ./auth-server
+        environment:
+            - ASPNETCORE_ENVIRONMENT=Production  
+        ports:
+            - "60666:80"
+        volumes:
+            - "/etc/localtime:/etc/localtime"
+            - "./auth-server:/app"
+        restart: always
+        logging: 
+            driver: "json-file"
+            options: 
+              max-size: "300m" 
+    nuxt-site:
+        build: ./nuxt-site
+        environment:
+            - NODE_ENV=production
+        ports:
+            - "60601:3000"
+        volumes:
+            - "/etc/localtime:/etc/localtime"
+            - "./nuxt-site/.nuxt:/app/.nuxt"
+            - "./nuxt-site/api:/app/api"
+            - "./nuxt-site/static:/app/static"
+            - "./nuxt-site/nuxt.config.js:/app/nuxt.config.js"
+            - "./nuxt-site/package.json:/app/package.json"
+            - "./nuxt-site/yarn.lock:/app/yarn.lock"
+        restart: always
+        logging: 
+            driver: "json-file"
+            options: 
+              max-size: "300m" 
+               
