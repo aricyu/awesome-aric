@@ -1,10 +1,10 @@
-# Deploy
+# Docker部署项目（简单）
 
-## Linux + Docker 部署项目需要以下依赖
-- linux
-- nginx
+## 依赖
 - docker
 - docker-compose(推荐)
+- linux (可选)
+- nginx (可选)
 - k8s(可选，微服务项目推荐使用)
 
 ## 什么是Docker
@@ -68,15 +68,7 @@ docker rm yun #删除容器
 ## 将项目运行在Docker上
 ### Dockerfile文件
 Dockerfile文件是用来生成镜像的。
-```
-FROM xxx
-
-WORKDIR /app       # 指定工作目录
-EXPOSE 80          # 声明端口
-COPY . .           # 复制指令，从上下文目录中复制文件或者目录到容器里指定路径。
-
-ENTRYPOINT ["启动命令"]    # 容器启动的时候执行的命令
-```
+@[code](./Dockerfile)
 
 ### 生成并运行Docker镜像
 ```
@@ -104,6 +96,11 @@ chmod +x /usr/local/bin/docker-compose
 ```
 docker-compose --version
 ```
+
+### docker-compose.yml
+@[code](./docker-compose.yml)
+
+
 ### 使用docker-compose部署项目
 1. 使用打包教程将项目打包
 2. 将outputs下的所有文件及文件夹移动到`/www/项目`(也可以是其他目录，只需要保证所有的配置都一样就行)下
@@ -119,3 +116,4 @@ docker-compose --version
 4. docker-compose up -d
 5. 等待几秒钟...
 6. 访问项目地址，让项目运行起来预热
+
