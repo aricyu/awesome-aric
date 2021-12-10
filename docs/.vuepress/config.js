@@ -52,7 +52,7 @@ module.exports = {
         sidebarDepth: 2,
         sidebar: sidebar.docs,
 
-        repo: 'https://gitee.com/aricyu/awesome-aric',
+        repo: 'https://github.com/aricyu/awesome-aric',
         docsDir: 'docs',
         editLink: true,
         editLinkText: '编辑此页',

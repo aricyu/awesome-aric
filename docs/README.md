@@ -8,6 +8,9 @@ actions:
   - text: 阅读
     link: /guide/
     type: primary
+  - text: Github
+    link: https://github.com/aricyu/awesome-aric
+    type: secondary
   - text: Gitee
     link: https://gitee.com/aricyu/awesome-aric
     type: secondary
