@@ -23,6 +23,6 @@ actions:
 #     details: Markdown书写，想找什么直接查
 footer: |  
   遵循<a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener"> MIT 开源协议</a><br>
-  Copyright © 2021-present Aric
+  Copyright © 2021-present Aric <a href="https://beian.miit.gov.cn/" target="_blank">鲁ICP备16024136号</a>
 footerHtml: true
 ---
