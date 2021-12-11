@@ -1,5 +1,16 @@
 dist
 node_modules
+yarn-error.log
+package-lock.json
 .temp
 .cache
-
+.idea
+*.user
+*.suo
+*.zip
+*.rar
+*.7z
+*.log
+.vs
+.vscode
+.DS_Store

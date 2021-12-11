@@ -49,10 +49,13 @@ module.exports = {
                 link: '/guide/',
             },
         ],
+
+        repo: 'https://github.com/aricyu/awesome-aric',
+
         sidebarDepth: 2,
         sidebar: sidebar.docs,
 
-        repo: 'https://github.com/aricyu/awesome-aric',
+
         docsDir: 'docs',
         editLink: true,
         editLinkText: '编辑此页',
@@ -74,4 +77,13 @@ module.exports = {
         toggleDarkMode: '切换夜间模式',
         toggleSidebar: '切换侧边栏',
     },
+
+    plugins: [
+        [
+            '@vuepress/plugin-search',
+            {
+                maxSuggestions: 10, 
+            }
+        ]
+    ]
 }
