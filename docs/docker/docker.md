@@ -6,6 +6,7 @@ docker pull redis:latest
 docker run -d --name local-redis -p 6379:6379 --restart=always redis:latest
 docker run -d --name local-redis -p 6379:6379 --restart=always redis:latest --requirepass "123456"
 ```
+
 ## docker 使用 rabbitmq
 ```
 docker pull rabbitmq:latest
