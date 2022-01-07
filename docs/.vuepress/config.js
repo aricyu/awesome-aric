@@ -13,7 +13,7 @@ const sidebar = {
         },
         {
             text: 'JavaScript',
-            children: ['/javascript/js',],
+            children: ['/javascript/js', '/javascript/axios', '/javascript/layui'],
 
         },
         {
@@ -82,7 +82,7 @@ module.exports = {
         [
             '@vuepress/plugin-search',
             {
-                maxSuggestions: 10, 
+                maxSuggestions: 10,
             }
         ]
     ]
