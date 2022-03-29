@@ -17,9 +17,17 @@ rabbitmq-plugins enable rabbitmq_management
 ## docker 使用 mysql
 ```
 docker pull mysql:latest
-docker run -itd --name local-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 mysql
+docker run -itd --name local-mysql -p 3306:3306 --restart=always -e MYSQL_ROOT_PASSWORD=123456 mysql
 mysql -h localhost -u root -p
 create database apetest default charset utf8;
+```
+
+
+## docker 使用 Postgresql
+```
+docker pull postgres:12
+docker run -itd --name local-postgres -p 5432:5432 --restart=always -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo -e POSTGRES_DB=postgres postgres:12
+docker run -d --name pgadmin4 -p 15050:80 -e PGADMIN_DEFAULT_EMAIL=aric_yu@foxmail.com -e PGADMIN_DEFAULT_PASSWORD=odoo -e PGADMIN_CONFIG_ENHANCED_COOKIE_PROTECTION=True   -e PGADMIN_CONFIG_CONSOLE_LOG_LEVEL=10 dpage/pgadmin4
 ```
 
 ## docker 进入容器
@@ -31,7 +39,7 @@ docker start local-redis
 ## docker 进入容器
 ```
 docker exec -it xxxxxxxxxx /bin/bash  
-docker exec -it 76c2bdaf512f /bin/bash  
+docker exec -it 2ab3feafe530 /bin/bash  
 ```
 
 ## docker 容器开机启动

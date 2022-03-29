@@ -41,7 +41,7 @@ export function getSomething(query) {
 
 其中***有以下值：
 
-- `indices` : `a[]=1&a[]=2&a[]=3`  // 默认，直接传就会是这种形式
+- `indices` : `a[0]=1&a[1]=2&a[2]=3`  // 默认，直接传就会是这种形式
 
 - `brackets` : `a[]=1&a[]=2&a[]=3`
 

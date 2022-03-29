@@ -23,7 +23,7 @@ const sidebar = {
         },
         {
             text: 'Python',
-            children: ['/python/python',],
+            children: ['/python/python','/python/python-pip','/python/python-venv'],
 
         },
         {
