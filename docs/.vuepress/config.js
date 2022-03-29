@@ -1,9 +1,13 @@
 const sidebar = {
     docs: [
-        '/guide',
+        '/guide',                
         {
-            text: 'Docker',
-            children: ['/docker/docker', '/docker/deploy'],
+            text: 'Visual Studio Code',
+            children: ['/vscode/javasrcipt.json',],
+        },
+        {
+            text: 'Python',
+            children: ['/python/python','/python/python-pip','/python/python-venv'],
 
         },
         {
@@ -22,13 +26,8 @@ const sidebar = {
 
         },
         {
-            text: 'Python',
-            children: ['/python/python','/python/python-pip','/python/python-venv'],
-
-        },
-        {
-            text: 'Visual Studio Code',
-            children: ['/vscode/javasrcipt.json',],
+            text: 'Docker',
+            children: ['/docker/docker', '/docker/deploy'],
 
         },
     ]
@@ -38,7 +37,6 @@ module.exports = {
     lang: 'zh-CN',
     title: 'awesome-aric',
     description: 'awesome-aric',
-
 
     head: [['link', { rel: 'icon', href: '/images/logo_16_16.png' }]],
     themeConfig: {
@@ -54,7 +52,6 @@ module.exports = {
 
         sidebarDepth: 2,
         sidebar: sidebar.docs,
-
 
         docsDir: 'docs',
         editLink: true,
