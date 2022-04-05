@@ -46,5 +46,4 @@ docker exec -it 2ab3feafe530 /bin/bash
 ```
 docker update --restart=always xxxxxxxxxx
 docker update --restart=always 81f80e89905a
-docker update --restart=always 084f6f764900
 ```
