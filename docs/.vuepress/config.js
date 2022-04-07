@@ -7,7 +7,7 @@ const sidebar = {
         },
         {
             text: 'Python',
-            children: ['/python/python','/python/python-pip','/python/python-venv'],
+            children: ['/python/python','/python/python-pip','/python/python-venv','/python/django-celery'],
 
         },
         {
