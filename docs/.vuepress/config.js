@@ -6,6 +6,11 @@ const sidebar = {
             children: ['/vscode/javasrcipt.json',],
         },
         {
+            text: 'Git',
+            children: ['/git/git-install','/git/git','/git/github'],
+
+        },
+        {
             text: 'Python',
             children: ['/python/python','/python/python-pip','/python/python-venv','/python/django-celery'],
 
