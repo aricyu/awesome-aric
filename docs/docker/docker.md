@@ -33,13 +33,13 @@ docker run -d --name pgadmin4 -p 15050:80 -e PGADMIN_DEFAULT_EMAIL=aric_yu@foxma
 ## docker 进入容器
 ```
 docker start xxxxxxxxxx
-docker start local-redis  
+docker start self-service-car_tcp-server  
 ```
 
 ## docker 进入容器
 ```
 docker exec -it xxxxxxxxxx /bin/bash  
-docker exec -it 2ab3feafe530 /bin/bash  
+docker exec -it 3cf324ca4f3f /bin/bash  
 ```
 
 ## docker 容器开机启动

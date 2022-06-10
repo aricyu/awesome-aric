@@ -1,18 +1,18 @@
 const sidebar = {
     docs: [
-        '/guide',                
+        '/guide',
         {
             text: 'Visual Studio Code',
             children: ['/vscode/javasrcipt.json',],
         },
         {
             text: 'Git',
-            children: ['/git/git-install','/git/git','/git/github'],
+            children: ['/git/git-install', '/git/git', '/git/cherry-pick', '/git/github'],
 
         },
         {
             text: 'Python',
-            children: ['/python/python','/python/python-pip','/python/python-venv','/python/django-celery'],
+            children: ['/python/python', '/python/python-pip', '/python/python-venv', '/python/django-celery'],
 
         },
         {
