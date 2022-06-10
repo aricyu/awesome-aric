@@ -343,7 +343,7 @@
     "@vuepress/core" "2.0.0-beta.46"
     prismjs "^1.28.0"
 
-"@vuepress/plugin-search@^2.0.0-beta.46":
+"@vuepress/plugin-search@^2.0.0-beta.45":
   version "2.0.0-beta.46"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-search/-/plugin-search-2.0.0-beta.46.tgz#52bf0e85988813b62777a966b6880ac93b17b3fa"
   integrity sha512-gk8im+UoWgR+1LcuerBgnH+Guq7KNW4d+Q2EICAnpDgfL0AUII11s3eT5ZsdssUTWBsYdah7DmBJLeR+sOxbqg==
@@ -1454,7 +1454,7 @@ vuepress-vite@2.0.0-beta.46:
     "@vuepress/core" "2.0.0-beta.46"
     "@vuepress/theme-default" "2.0.0-beta.46"
 
-vuepress@^2.0.0-beta.46:
+vuepress@^2.0.0-beta.45:
   version "2.0.0-beta.46"
   resolved "https://registry.yarnpkg.com/vuepress/-/vuepress-2.0.0-beta.46.tgz#855d4a451d75438d5c0e7dfc0284b61aa3b792cd"
   integrity sha512-5aDb1PiSjU4w/66YnQkaodcocAwkGEjtPv7Ux4dqEh8W+IjVqYcedg2syI5NuBrcAkNh9uq/6CTFibrZ6eyR2w==
