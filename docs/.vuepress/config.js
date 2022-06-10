@@ -37,14 +37,19 @@ const sidebar = {
         },
     ]
 }
+const { defaultTheme } = require('@vuepress/theme-default')
+const { searchPlugin } = require('@vuepress/plugin-search')
+const { searchConsolePlugin } = require('vuepress-plugin-china-search-console')
 
 module.exports = {
     lang: 'zh-CN',
     title: 'awesome-aric',
     description: 'awesome-aric',
 
-    head: [['link', { rel: 'icon', href: '/images/logo_16_16.png' }]],
-    themeConfig: {
+    head: [
+        ['link', { rel: 'icon', href: '/images/logo_16_16.png' }]
+    ],
+    theme: defaultTheme({
         logo: '/logo.png',
         navbar: [
             {
@@ -78,14 +83,17 @@ module.exports = {
         openInNewWindow: '在新窗口打开',
         toggleDarkMode: '切换夜间模式',
         toggleSidebar: '切换侧边栏',
-    },
+    }),
 
     plugins: [
-        [
-            '@vuepress/plugin-search',
-            {
-                maxSuggestions: 10,
-            }
-        ]
+        searchPlugin({
+            maxSuggestions: 10
+        }),
+        searchConsolePlugin({
+            baiduId: "2d9be53517f0a4e3bd0d2abd3ba639fc",
+            toutiaoAutoPushId: "",
+            autoPushBaiduSwitch: false,
+            autoPush360Switch: false,
+        })
     ]
 }
