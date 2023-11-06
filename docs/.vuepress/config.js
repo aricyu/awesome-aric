@@ -70,9 +70,12 @@ module.exports = {
         sidebar: sidebar.docs,
 
         docsDir: 'docs',
+
         editLink: true,
         editLinkText: '编辑此页',
+        lastUpdated: true,
         lastUpdatedText: '上次更新',
+        contributors: false,
         contributorsText: '贡献者',
 
         tip: '提示',
