@@ -6,7 +6,7 @@
 - Celery 是一款消息队列工具，可用于处理实时数据以及任务调度。
 - Celery 是根据 BSD License 进行开源的。
 
-[官方文档](https://docs.celeryq.dev/en/latest/)
+[官方文档](https://docs.celeryq.dev/en/stable/)
 
 [中文翻译](https://www.celerycn.io/)
 

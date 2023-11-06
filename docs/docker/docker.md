@@ -4,7 +4,7 @@
 ```
 docker pull redis:latest
 docker run -d --name local-redis -p 6379:6379 --restart=always redis:latest
-docker run -d --name local-redis -p 6379:6379 --restart=always redis:latest --requirepass "123456"
+docker run -d --name local-redis -p 6379:6379 --restart=always redis:latest --requirepass "redis666"
 ```
 
 ## docker 使用 rabbitmq
@@ -17,7 +17,7 @@ rabbitmq-plugins enable rabbitmq_management
 ## docker 使用 mysql
 ```
 docker pull mysql:latest
-docker run -itd --name local-mysql -p 3306:3306 --restart=always -e MYSQL_ROOT_PASSWORD=123456 mysql
+docker run -itd --name local-mysql -p 3306:3306 --restart=always -e MYSQL_ROOT_PASSWORD=mysql666 mysql
 mysql -h localhost -u root -p
 create database apetest default charset utf8;
 ```

@@ -12,7 +12,7 @@ const sidebar = {
         },
         {
             text: 'Python',
-            children: ['/python/python', '/python/python-pip', '/python/python-venv', '/python/django-celery'],
+            children: ['/python/python', '/python/python-pip', '/python/python-venv', '/python/django-celery', '/python/awesome-python'],
 
         },
         {
@@ -32,14 +32,20 @@ const sidebar = {
         },
         {
             text: 'Docker',
-            children: ['/docker/docker', '/docker/deploy'],
+            children: ['/docker/docker', '/docker/docker-install', '/docker/deploy'],
+
+        },
+        {
+            text: '踩坑记录',
+            children: ['/problems/package-manager', '/problems/powershell', '/problems/pycharm'],
 
         },
     ]
 }
-const { defaultTheme } = require('@vuepress/theme-default')
-const { searchPlugin } = require('@vuepress/plugin-search')
-const { searchConsolePlugin } = require('vuepress-plugin-china-search-console')
+
+import { defaultTheme } from '@vuepress/theme-default'
+import { searchPlugin } from '@vuepress/plugin-search'
+import { searchConsolePlugin } from 'vuepress-plugin-china-search-console'
 
 module.exports = {
     lang: 'zh-CN',
@@ -81,7 +87,7 @@ module.exports = {
 
         backToHome: '返回首页',
         openInNewWindow: '在新窗口打开',
-        toggleDarkMode: '切换夜间模式',
+        toggleColorMode: '切换夜间模式',
         toggleSidebar: '切换侧边栏',
     }),
 
