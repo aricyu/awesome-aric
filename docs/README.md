@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /logo.png
+heroImage: /logo_360x360.png
 heroAlt: awesome-aric
 heroText: awesome-aric
 tagline: 我来到，我看见，我记录

@@ -53,10 +53,10 @@ module.exports = {
     description: 'awesome-aric',
 
     head: [
-        ['link', { rel: 'icon', href: '/images/logo_16_16.png' }]
+        ['link', { rel: 'icon', href: '/images/logo_16x16.png' }]
     ],
     theme: defaultTheme({
-        logo: '/logo.png',
+        logo: '/logo_64x64.png',
         navbar: [
             {
                 text: '文档',
