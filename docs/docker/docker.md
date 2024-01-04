@@ -4,7 +4,7 @@
 ```
 docker pull redis:latest
 docker run -d --name local-redis -p 6379:6379 --restart=always redis:latest
-docker run -d --name local-redis -p 6379:6379 --restart=always redis:latest --requirepass "redis666"
+docker run -d --name local-redis -p 6378:6379 --restart=always redis:latest --requirepass "redis666"
 ```
 
 ## docker 使用 rabbitmq
@@ -17,9 +17,9 @@ rabbitmq-plugins enable rabbitmq_management
 ## docker 使用 mysql
 ```
 docker pull mysql:latest
-docker run -itd --name local-mysql -p 3306:3306 --restart=always -e MYSQL_ROOT_PASSWORD=mysql666 mysql
+docker run -itd --name local-mysql -p 3307:3306 --restart=always -e MYSQL_ROOT_PASSWORD=mysql666 mysql
 mysql -h localhost -u root -p
-create database apetest default charset utf8;
+create database ape_keeper_test default charset utf8;
 ```
 
 
@@ -39,7 +39,7 @@ docker start self-service-car_tcp-server
 ## docker 进入容器
 ```
 docker exec -it xxxxxxxxxx /bin/bash  
-docker exec -it 3cf324ca4f3f /bin/bash  
+docker exec -it d93da62b29b2 /bin/bash  
 ```
 
 ## docker 容器开机启动

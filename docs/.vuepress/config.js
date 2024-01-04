@@ -34,6 +34,10 @@ const sidebar = {
             text: 'Docker',
             children: ['/docker/docker', '/docker/docker-install', '/docker/deploy'],
 
+        }, {
+            text: 'Yolo',
+            children: ['/yolo/install',],
+
         },
         {
             text: '踩坑记录',
